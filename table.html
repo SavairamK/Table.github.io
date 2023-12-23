@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 5px solid black;
+            height: 20rem;
+            width: 60rem;
+            font-size: large;
+            font-weight: 500;
+        }
+        .final_bill{
+            text-align: center;
+        }
+        tr,th,td{
+            height: 40px;
+        }
+        td{
+            padding-left: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        
+        <h1>HTML Table</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Purchase Order: 987654321</th>
+                    <th colspan="3">TutorialBrain: 10th Oct 2023</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Vendor: <br>
+                        ABC XYZ ltd. <br>
+                        Dummy Street <br>
+                        Building - 1 <br>
+                        Pune.
+                    </td>
+                    <td colspan="3">
+                        Ship To: <br>
+                        PQRS <br>
+                        Dummy Home <br>
+                        Building - 5 <br>
+                        Mumbai.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td>Item Code</td>
+                    <td>Description</td>
+                    <td>Unit Price</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>IABCDE</td>
+                    <td>Laptop</td>
+                    <td>55,000 Rs.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>IN877</td>
+                    <td>Notebook</td>
+                    <td>20 Rs.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>IP8675</td>
+                    <td>Pen</td>
+                    <td>10 Rs.</td>
+                </tr>
+                <tr class="final_bill">
+                    <td colspan="2">Subtotal</td>
+                    <td colspan="2">5,50,300 Rs.</td>
+                </tr>
+                <tr class="final_bill">
+                    <td colspan="2">GST 5%</td>
+                    <td colspan="2">9.50</td>
+                </tr>
+                <tr class="final_bill">
+                    <td colspan="2">Grand Total</td>
+                    <td colspan="2">6,00,120 Rs.</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
